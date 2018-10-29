@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title><%- htmlWebpackPlugin.options.title  %></title>
+
+  <meta charset="utf-8">
+
+  <!--Tracking code from umeng -->
+  <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1273207290'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1273207290%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <!--
+  <script src="//g.alicdn.com/tida/tida/0.0.14/index.js"></script>
+  <script src="//g.alicdn.com/sd/ctl/ctl.js"></script>
+  <script src="//g.alicdn.com/zebra-pages/offline-vending-machine-home/1.2.6/daemon.js"></script>
+  -->
+
+</head>
+<body>
+  <div id="cameraContainer">
+    <div id="container">
+      <video id="videoel" width="1920" height="1080" preload="auto" loop>
+      </video>
+      <canvas id="overlay" width="1080" height="905"></canvas>
+    </div>
+  </div>
+  <video preload id="video"></video>
+  <div id="devicePage"></div>
+  <div id="extraElements"></div>
+  <div id="flipbook" style="display: none">
+    <div><img src="<%= require('../public/images/device/guide_0.jpg') %>" width="658" height="894"/></div>
+    <div><img src="<%= require('../public/images/device/guide_1.jpg') %>" width="658" height="894"/></div>
+    <div><img src="<%= require('../public/images/device/guide_2.jpg') %>" width="658" height="894"/></div>
+    <div><img src="<%= require('../public/images/device/guide_3.jpg') %>" width="658" height="894"/></div>
+  </div>
+
+</body>
+</html>

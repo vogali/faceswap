@@ -1,0 +1,28 @@
+body {
+  margin: 0px 0px 1px 0px;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.table {
+  display: table;
+  table-layout: fixed;
+}
+
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+img {
+  position: absolute;
+  //width: auto;
+	//height: auto;
+	//max-width: 98%;
+	//max-height: 98%;
+}
+
+#cnzz_stat_icon_1273207290 {
+  display:none;
+}

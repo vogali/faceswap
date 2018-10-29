@@ -1,0 +1,21 @@
+version: '3'
+services:
+  development:
+    image: "g0028-development"
+    build:
+      context: ./
+      args:
+        GAME_ID: "G0028"
+        DEPLOY_ENV: "development"
+        DEPLOY_PORT: "60028"
+    ports:
+      - "60028:60028"
+    volumes:
+      - ./docker/data:/usr/src/app/data
+      - ./server:/usr/src/app/server # we can enable it when debug
+      - ./dist/development/games/G0028:/usr/src/app/dist # we can enable it when debug
+
+networks:
+  default:
+    external:
+      name: game-backend-network
