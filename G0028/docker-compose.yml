@@ -6,7 +6,7 @@ services:
       context: ./
       args:
         GAME_ID: "G0028"
-        DEPLOY_ENV: "staging"
+        DEPLOY_ENV: "production"
         DEPLOY_PORT: "60028"
     ports:
       - "60028:60028"
